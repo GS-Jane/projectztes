@@ -1,0 +1,1 @@
+"use strict";$(function(e){var i=new GVerify({id:"picyzm",length:4});console.log(i)});
