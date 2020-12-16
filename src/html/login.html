@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <a href="">
+                <img src="../static/images/logon.png" alt="" class="logo">
+            </a>
+        </div>
+    </div>
+    <div id="center">
+        <div class="container clearfix">
+            <div class="centerLeft fl">
+                <img src="../static/images/login1.jpg" alt="">
+            </div>
+            <div class="centerRight fr">
+                <form action="" class="centerLogin">
+                    <div class="form-dl">
+                        <span>会员登录</span> <em>|</em> <span>短信登录</span> <em>|</em> <span>员工登录</span> <a href="../html/register.html">免费注册></a>
+                    </div>
+                    <div class="form-phon">
+                        <span class="form-span">
+                      <input type="text" id="username" placeholder="会员账号" class="entry">
+                      <i class="iconfont icon-dibudaohanglan-"></i>
+                    </span>
+                    </div>
+                    <div class="form-password">
+                        <span class="form-span">
+                        <input type="password" id="password" placeholder="填写密码" class="entry">
+                      <i class="iconfont icon-mima"></i>
+                  </span>
+                    </div>
+                    <div class="form-code clearfix">
+                        <span class="form-span form-codespan fl">
+                      <input type="text" id="code" placeholder="验证码" class="entry">
+                        </span>
+                        <span id="picyzm" class="user fl"></span>
+                        <a href="javascript:void(0);" class="user fl usera">看不清? <i>换一张</i></a>
+                    </div>
+                    <div class="form-forget">
+                        忘记密码?
+                    </div>
+                    <div class="form-btn">
+                        <button type="button" class="hand">登录</button>
+                    </div>
+                </form>
+                <div class="wbqq">
+                    <img src="../static/images/weibo.png" alt="">
+                    <img src="../static/images/qq.png" alt="">
+                    <img src="../static/images/weixin.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="foot">
+        <div class="container">
+            <a href="javascript:void(0);">服务协议</a>&nbsp;|
+            <a href="javascript:void(0);">隐私政策</a>&nbsp; | ©2014 - 2020 深圳市中兴智谷科技有限公司版权所有，并保留所有权利
+        </div>
+    </div>
+
+</body>
+<script src="../utils/jquery-3.5.1.min.js"></script>
+<script src="../utils/ajax.js"></script>
+<script src="../utils/utils.js"></script>
+<script src="../utils/gverify.js"></script>
+<script src="../js/login.js"></script>
+
+</html>

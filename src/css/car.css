@@ -1,0 +1,197 @@
+#main {
+  padding: 20px 0;
+  background: #fff;
+}
+
+#main .nuls h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#main .nuls p {
+  font-style: 20px;
+  line-height: 30px;
+}
+
+#main .nuls p a {
+  color: #1766dd;
+}
+
+#main .car-head {
+  background: #eeeeee;
+  margin-bottom: 10px;
+  height: 40px;
+  line-height: 40px;
+}
+
+#main .car-head li {
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  color: #000000;
+}
+
+#main .car-head li:nth-of-type(1) {
+  width: 60px;
+}
+
+#main .car-head li:nth-of-type(2) {
+  width: 41%;
+}
+
+#main .car-head li:nth-of-type(3) {
+  width: 170px;
+}
+
+#main .car-head li:nth-of-type(4) {
+  width: 170px;
+}
+
+#main .car-head li:nth-of-type(5) {
+  width: 170px;
+}
+
+#main .car-table tbody {
+  width: 100%;
+}
+
+#main .car-table tr {
+  font-size: 12px;
+  border: 1px solid #efefef;
+}
+
+#main .car-table td {
+  padding: 10px;
+}
+
+#main .car-table td:nth-of-type(1) {
+  width: 60px;
+}
+
+#main .car-table td:nth-of-type(2) {
+  width: 41%;
+}
+
+#main .car-table td:nth-of-type(3) {
+  width: 170px;
+  padding-left: 30px;
+}
+
+#main .car-table td:nth-of-type(4) {
+  width: 170px;
+}
+
+#main .car-table td:nth-of-type(5) {
+  width: 170px;
+  text-align: center;
+}
+
+#main .car-table td:nth-of-type(6) {
+  width: 170px;
+  padding-left: 30px;
+}
+
+#main .car-table .carintroduce .divimg {
+  width: 49px;
+  height: 65px;
+  margin: 0 5px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  margin-right: 10px;
+}
+
+#main .car-table .carintroduce .divimg img {
+  width: 100%;
+  height: 100%;
+}
+
+#main .car-table .carintroduce .divcen p {
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+#main .car-table .carnum span {
+  display: inline-block;
+  width: 30px;
+  height: 38px;
+  margin-right: 0;
+  line-height: 38px;
+  font-size: 14px;
+  text-align: center;
+  background: #f7f7f7;
+  color: #3a3a3a;
+  border: 1px solid #c6c6c6;
+  border-radius: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+#main .car-table .carnum span:nth-of-type(1) {
+  border-right: 0;
+}
+
+#main .car-table .carnum span:nth-of-type(2) {
+  border-left: 0;
+}
+
+#main .car-table .carnum input {
+  width: 60px;
+  height: 38px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  border: 1px solid #c6c6c6;
+  outline: none;
+}
+
+#main .car-foot {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 64px;
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #efefef;
+  line-height: 64px;
+  font-size: 12px;
+}
+
+#main .car-foot .carfootleft {
+  margin-left: 10px;
+}
+
+#main .car-foot .carfootleft .cardels {
+  color: #1766dd;
+  margin-left: 20px;
+}
+
+#main .car-foot .carfootright span {
+  margin-right: 10px;
+}
+
+#main .car-foot .carfootright span em {
+  color: #e22335;
+}
+
+#main .car-foot .carfootright span .titlemoney {
+  font-size: 16px;
+}
+
+#main .car-foot .carfootright .gosettlement {
+  display: inline-block;
+  width: 128px;
+  height: 100%;
+  background: #999999;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  margin-right: 0;
+}
+
+#main .car-foot .carfootright .gosettlementactive {
+  background-color: #ca151d;
+}

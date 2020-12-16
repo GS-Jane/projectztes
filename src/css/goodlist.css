@@ -1,0 +1,442 @@
+#main {
+  padding: 30px 0;
+}
+
+#main .bread-nav {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+#main .bread-nav span {
+  color: #333333;
+}
+
+#main .bread-nav span:nth-of-type(1) {
+  font-weight: 600;
+}
+
+#main .bread-nav span:nth-last-of-type(1) {
+  color: #999999;
+}
+
+#main .main-cen {
+  margin-bottom: 10px;
+}
+
+#main .main-cen .main-cenleft {
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#main .main-cen .main-cenleft .main-cenlefttop {
+  width: 410px;
+  height: 430px;
+  position: relative;
+  text-align: center;
+}
+
+#main .main-cen .main-cenleft .main-cenlefttop img {
+  width: 100%;
+  height: 100%;
+}
+
+#main .main-cen .main-cenleft .main-cenlefttop .mask {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 1;
+  cursor: move;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+#main .main-cen .main-cenleft .main-cenleftbom {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#main .main-cen .main-cenleft .main-cenleftbom p {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-right: 4px;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+}
+
+#main .main-cen .main-cenleft .main-cenleftbom p img {
+  width: 100%;
+  height: 100%;
+}
+
+#main .main-cen .main-cenleft .main-cenleftbom .active {
+  border-color: #ca151d;
+}
+
+#main .main-cen .main-cenleft .enlarge {
+  position: absolute;
+  z-index: 999;
+  display: none;
+  width: 365px;
+  height: 365px;
+  overflow: hidden;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #dadadd;
+  top: 0px;
+  left: 450px;
+  background-size: 800px 800px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+#main .main-cen .main-cenright {
+  width: 610px;
+  margin-left: 130px;
+}
+
+#main .main-cen .main-cenright .main-cenrighttop {
+  padding: 0px 20px 10px 0;
+}
+
+#main .main-cen .main-cenright .main-cenrighttop h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+#main .main-cen .main-cenright .main-cenrighttop .cenrightp {
+  color: #393939;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+#main .main-cen .main-cenright .main-cenrighttop .cenrightbox {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #f4f6fa;
+}
+
+#main .main-cen .main-cenright .main-cenrighttop .cenrightbox div:nth-of-type(1) {
+  font-size: 38px;
+  color: #ca151d;
+}
+
+#main .main-cen .main-cenright .main-cenrighttop .cenrightbox div:nth-of-type(2) {
+  font-size: 12px;
+  color: #8d8d8d;
+  margin-right: 16px;
+  position: relative;
+}
+
+#main .main-cen .main-cenright .main-cenrighttop .cenrightbox div:nth-of-type(2) i {
+  display: inline-block;
+}
+
+#main .main-cen .main-cenright .main-cenrighttop .cenrightbox div:nth-of-type(2) img {
+  position: absolute;
+  top: 18px;
+  left: -17px;
+  display: none;
+}
+
+#main .main-cen .main-cenright .main-cenrighttop .cenrightbox div:nth-of-type(2):hover i {
+  transform: rotate(180deg);
+}
+
+#main .main-cen .main-cenright .main-cenrighttop .cenrightbox div:nth-of-type(2):hover img {
+  display: block;
+}
+
+#main .main-cen .main-cenright .main-cenrighttop .cenrightx {
+  margin-top: 20px;
+  border-bottom: 1px dashed #b9b9b9;
+  padding: 0;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom {
+  padding: 15px 0 20px 20px;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-spec,
+#main .main-cen .main-cenright .main-cenrightbom .choose-mb {
+  margin-bottom: 12px;
+  color: #666666;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-spec .dt,
+#main .main-cen .main-cenright .main-cenrightbom .choose-mb .dt {
+  float: left;
+  width: 75px;
+  margin-right: 0;
+  height: 36px;
+  clear: both;
+  font-size: 12px;
+  line-height: 30px;
+  color: #3a3a3a;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-spec .choose-item-wrap,
+#main .main-cen .main-cenright .main-cenrightbom .choose-mb .choose-item-wrap {
+  float: left;
+  width: 515px;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-spec .choose-item-wrap .choose-item,
+#main .main-cen .main-cenright .main-cenrightbom .choose-mb .choose-item-wrap .choose-item {
+  position: relative;
+  float: left;
+  width: 160px;
+  height: 43px;
+  overflow: hidden;
+  font-family: helvetica, sans-serif;
+  line-height: 43px;
+  color: #3a3a3a;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #cbcbcb;
+  outline: 1px solid #ffffff;
+  margin: 0 10px 5px 0;
+  padding: 0 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-spec .choose-item-wrap .choose-item img,
+#main .main-cen .main-cenright .main-cenrightbom .choose-mb .choose-item-wrap .choose-item img {
+  width: auto;
+  height: 100%;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-spec .choose-item-wrap .choose-item:nth-last-of-type(1),
+#main .main-cen .main-cenright .main-cenrightbom .choose-mb .choose-item-wrap .choose-item:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-spec .choose-item-wrap .choose-itemactive,
+#main .main-cen .main-cenright .main-cenrightbom .choose-mb .choose-item-wrap .choose-itemactive {
+  border: 1px solid #ca151d;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-mb {
+  margin-bottom: 20px;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-mb .dd {
+  margin-left: 80px;
+  line-height: 30px;
+  color: #ca151d;
+  font-size: 12px;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-num span {
+  display: inline-block;
+  width: 30px;
+  height: 38px;
+  margin-right: 0;
+  line-height: 38px;
+  font-size: 14px;
+  text-align: center;
+  background: #f7f7f7;
+  color: #3a3a3a;
+  border: 1px solid #c6c6c6;
+  border-radius: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-num span:nth-of-type(1) {
+  border-right: 0;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-num span:nth-of-type(2) {
+  border-left: 0;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .choose-num input {
+  width: 60px;
+  height: 38px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  border: 1px solid #c6c6c6;
+  outline: none;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .btn-wrap {
+  margin: 20px 0 0 83px;
+  margin-left: 0;
+  font-size: 16px;
+  position: relative;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .btn-wrap span {
+  display: inline-block;
+  width: 207px;
+  padding-left: 0;
+  text-align: center;
+  line-height: 53px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .btn-wrap span:nth-of-type(1) {
+  background-color: #ca151d;
+  color: white;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .btn-wrap span:nth-of-type(2) {
+  background: #ffffff;
+  border: 1px solid #ca151d;
+  color: #ca151d;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .btn-wrap .caradd {
+  display: none;
+  width: 206px;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  left: 222px;
+  top: 56px;
+  z-index: 9;
+  line-height: 10px;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .btn-wrap .caradd .carheader {
+  height: 35px;
+  padding: 0 10px;
+  background-color: #efefef;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .btn-wrap .caradd .carheader h5 {
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #555555;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .btn-wrap .caradd .carheader i {
+  float: right;
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  line-height: 30px;
+  padding: 0;
+  overflow-y: hidden;
+  color: #c6c6c6;
+  background: none;
+  border: 0 none;
+  cursor: pointer;
+  text-align: center;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .btn-wrap .caradd .carcen {
+  padding: 15px;
+  color: #555555;
+  text-align: center;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .btn-wrap .caradd .carcen p {
+  margin-bottom: 9px;
+  font-size: 12px;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .btn-wrap .caradd .carcen .actis button {
+  font-size: 12px;
+  background-color: #ffffff;
+}
+
+#main .main-cen .main-cenright .main-cenrightbom .btn-wrap .caradd .carcen .actis a {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #FC5910;
+  line-height: 16px;
+  padding: 3px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#main .main-introduce {
+  position: relative;
+  padding-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+#main .main-introduce .dig-tab ul li {
+  float: left;
+  padding: 0 20px;
+  border-top: 2px solid #ffffff;
+  border-bottom: 0;
+  width: 160px;
+  height: 52px;
+  line-height: 52px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#main .main-introduce .dig-tab ul .active {
+  color: #ca1119;
+  cursor: default;
+  background-color: #ffffff;
+  border-top: 2px solid #ca1119;
+}
+
+#main .main-introduce .introduce-cer {
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+#main .main-introduce .introduce-cer .detailinfo-list {
+  padding: 0 20px 10px 20px;
+}
+
+#main .main-introduce .introduce-cer .detailinfo-list li {
+  float: left;
+  width: 33%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#main .main-introduce .goods-info h3 {
+  height: 36px;
+  padding: 0 10px;
+  margin: 0 20px;
+  font-size: 14px;
+  line-height: 36px;
+  background: #ffffff;
+}
+
+#main .main-introduce .goods-info .hdimg {
+  padding: 10px;
+  line-height: 2;
+  border: 1px solid #efefef;
+}
+
+#main .main-introduce .goods-info .hdimg img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
