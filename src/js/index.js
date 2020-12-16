@@ -41,11 +41,8 @@ jQuery(function($) {
     });
 
     function rendering(data) {
-        // console.log(data);
-
         let str = '';
         for (let i = 0; i <= 5; i++) {
-            // console.log(data[i].good_new);
             str += `
             <li data-id="${data[i].id}">
                 <div class="commodity-right-pic">
@@ -66,9 +63,7 @@ jQuery(function($) {
         let commodityul1 = document.querySelector('.commodityul1');
         let spannew = commodityul1.querySelectorAll('.spannew')
         spannew.forEach((item) => {
-            // console.log(item);
             if (item.innerHTML == 'null') {
-                // console.log(1);
                 item.style.display = 'none'
             }
         })
@@ -76,10 +71,8 @@ jQuery(function($) {
     }
 
     function rendering1(data) {
-        // console.log(data);
         let str = '';
         for (let i = 6; i <= 11; i++) {
-            // console.log(data[i].good_new);
             str += `
             <li data-id="${data[i].id}">
                 <div class="commodity-right-pic">
@@ -100,16 +93,13 @@ jQuery(function($) {
         let commodityul2 = document.querySelector('.commodityul2');
         let spannew = commodityul2.querySelectorAll('.spannew')
         spannew.forEach((item) => {
-            // console.log(item);
             if (item.innerHTML == 'null') {
-                // console.log(1);
                 item.style.display = 'none'
             }
         })
     }
 
     function parts(data) {
-        // console.log(data);
         let str = '';
         for (let i = 12; i < 17; i++) {
             str += `
@@ -137,7 +127,4 @@ jQuery(function($) {
     $('.partsul').on('click', 'li', function() {
         location.href = `../html/goodlist.html?id=${$(this).attr('data-id')}`
     })
-
-    // let login = getCookie('login');
-    // console.log(login);
 })
