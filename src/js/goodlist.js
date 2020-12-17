@@ -101,7 +101,7 @@ jQuery(function($) {
                         <div class="dt">颜色</div>
                         <div class="choose-item-wrap clearfix">
                             <div class="choose-item" data-title="${data.good_color}">
-                                <img src="${data.good_img}" alt="">
+                                <img src="${data.good_img}" alt="" class="datacorimg">
                             </div>
                             <div class="choose-item" data-title="${data.good_color1}">
                                 <img src="${data.good_img1}" alt="">
@@ -251,6 +251,8 @@ jQuery(function($) {
         new Enlarge(".main-cenleft");
         // 选择规格参数
         let goodimg;
+        goodimg = $('.datacorimg').attr('src');
+        console.log(goodimg);
         $('.speccol').on('click', '.choose-item', function() {
             // $(this).siblings().removeClass('choose-itemactive');
             $(this).addClass('choose-itemactive').siblings().removeClass('choose-itemactive');
@@ -278,13 +280,15 @@ jQuery(function($) {
                     return
                 }
                 $('.choose-numval').val($('.choose-numval').val() * 1 - 1);
+                $('.numgod span').text($('.choose-numval').val());
             }
             if ($(this).hasClass('add')) {
-                if ($('.choose-numval').val() >= 5) {
-                    alert('此商品的最大购买数量为5件')
-                    return
-                }
+                // if ($('.choose-numval').val() >= 5) {
+                //     alert('此商品的最大购买数量为5件')
+                //     return
+                // }
                 $('.choose-numval').val($('.choose-numval').val() * 1 + 1);
+                $('.numgod span').text($('.choose-numval').val());
             }
         });
 
@@ -304,7 +308,7 @@ jQuery(function($) {
                 return
             }
 
-            console.log($('.choose-numval').val(), $('.numgod em').html(), $('.numgod i').html(), $('.numgod stong').html());
+            console.log(goodimg, $('.choose-numval').val(), $('.numgod em').html(), $('.numgod i').html(), $('.numgod stong').html());
             // 立即购买添加到购物车
             if ($(this).hasClass('immediately')) {
                 $.ajax({
@@ -333,6 +337,7 @@ jQuery(function($) {
             }
             // 添加到购物车
             if ($(this).hasClass('addCat')) {
+                console.log(goodimg);
                 $.ajax({
                     url: '../api/addcar.php',
                     method: 'get',

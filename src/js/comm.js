@@ -43,14 +43,14 @@ function header() {
   <h1 class="fl"><img src="../static/images/logon.png" alt=""></h1>
   <div class="center-sech fl">
       <p class="clearfix">
-          <input type="text">
-          <button class="hand">搜索</button>
+          <input type="text" class="searchval">
+          <button class="hand search">搜索</button>
       </p>
       <p>
           <span>热门关键字：</span>
-          <a href="">Axon 20</a>
-          <a href="">Axon 11 SE 5G </a>
-          <a href="">Axon 11 5G</a>
+          <a href="../html/list.html">Axon 20</a>
+          <a href="../html/list.html">Axon 11 SE 5G </a>
+          <a href="../html/list.html">Axon 11 5G</a>
       </p>
   </div>
   <div class="shoppingCart fr">
@@ -735,6 +735,17 @@ function header() {
     });
 
 
+    // 搜索
+    $('.search').on('click', function() {
+        // console.log($('.searchval').val());
+        if ($('.searchval').val() == '') {
+            alert('搜索框不能为空')
+            return
+        }
+        window.location.href = "../html/list.html";
+        sessionStorage.setItem('searchval', $('.searchval').val())
+
+    })
 
 }
 

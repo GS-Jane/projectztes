@@ -35,7 +35,7 @@ jQuery(function($) {
         },
         dataType: 'json',
         success: function(res) {
-            // console.log(res);
+            console.log(res);
 
             if (res.code == 1) {
                 // 先把数据存放到本地
@@ -126,6 +126,7 @@ jQuery(function($) {
             </div>
         </div>`
         $('#main').html(str);
+        gosettlements()
     }
 
     // 事件委托操作商品
@@ -136,9 +137,11 @@ jQuery(function($) {
             data.forEach(item => {
                 e.target.checked ? item.is_select = 1 : item.is_select = 0;
             });
+
             localStorage.setItem('goodsList', JSON.stringify(data));
             rendering(data);
-            gosettlements()
+            // gosettlements()
+
         }
         // 单选商品
         if (e.target.classList.contains('check')) {
@@ -151,7 +154,7 @@ jQuery(function($) {
             });
             localStorage.setItem('goodsList', JSON.stringify(data));
             rendering(data);
-            gosettlements()
+            // gosettlements()
         }
         // 减少商品数量
         if (e.target.classList.contains('carreduce')) {
@@ -168,8 +171,6 @@ jQuery(function($) {
             } else {
                 num--
             }
-            gosettlements()
-
             $.ajax({
                 url: '../api/updCarData.php',
                 method: 'get',
@@ -191,7 +192,7 @@ jQuery(function($) {
         }
         // 添加商品数量
         if (e.target.classList.contains('caradd')) {
-            // 进行数量减法
+            // 进行数量加法
             let data = JSON.parse(localStorage.getItem('goodsList'));
             let id = e.target.parentNode.getAttribute('goods_id');
 
@@ -200,7 +201,7 @@ jQuery(function($) {
             })[0];
             let num = obj.good_num * 1;
             num++
-            gosettlements()
+
             $.ajax({
                 url: '../api/updCarData.php',
                 method: 'get',
@@ -227,7 +228,7 @@ jQuery(function($) {
                 return
             }
             let id = e.target.getAttribute('goods_id');
-            gosettlements()
+            // gosettlements()
             $.ajax({
                 url: '../api/removeCarData.php',
                 method: 'get',
@@ -266,7 +267,7 @@ jQuery(function($) {
             if (!confirm("你确定要删除选中的商品吗？")) {
                 return
             }
-            gosettlements()
+            // gosettlements()
             delsjs(res)
 
 
@@ -282,7 +283,7 @@ jQuery(function($) {
                 alert('请先勾选需要购买的商品')
                 return
             }
-            gosettlements()
+            // gosettlements()
             delsjs(res)
 
 
@@ -313,9 +314,11 @@ jQuery(function($) {
     // 判断是否有商品被选中
     function gosettlements() {
         let data = JSON.parse(localStorage.getItem('goodsList'));
+
         let res = data.filter(item => {
             return item.is_select == 1
         });
+        console.log(res);
         if (res.length > 0) {
             $('.gosettlement').addClass('gosettlementactive')
         } else {

@@ -68,7 +68,6 @@
   margin: 0 5px;
   margin-bottom: 12px;
   background: #ffffff;
-  cursor: pointer;
 }
 
 #main .main-centent .listul li .commodity-right-pic {
@@ -89,6 +88,7 @@
   width: auto;
   max-height: 200px;
   display: block;
+  cursor: pointer;
 }
 
 #main .main-centent .listul li .commodity-right-pic .listcar {
@@ -125,6 +125,7 @@
   overflow: hidden;
   white-space: nowrap;
   margin-bottom: 11px;
+  cursor: pointer;
 }
 
 #main .main-centent .listul li .commodity-right-info .info-c {
@@ -149,4 +150,203 @@
   font-size: 17px;
   font-weight: 500;
   color: #cc0000;
+}
+
+.main-cenrighttop,
+.numgod {
+  display: none;
+}
+
+.listaddcar {
+  width: 766px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+  display: none;
+}
+
+.listaddcar .listaddcar-dialoog .dialoog-top {
+  overflow: hidden;
+  color: #333333;
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  border-radius: 6px 6px 0 0;
+  height: 36px;
+  line-height: 36px;
+}
+
+.listaddcar .listaddcar-dialoog .dialoog-top h3 {
+  padding-left: 12px;
+  line-height: 2.8;
+  color: #999999;
+  font-size: 14px;
+}
+
+.listaddcar .listaddcar-dialoog .dialoog-top span {
+  padding-left: 10px;
+  padding-right: 14px;
+  cursor: pointer;
+}
+
+.listaddcar .main-cenrightbom {
+  background-color: #ffffff;
+  padding: 15px 0 20px 20px;
+}
+
+.listaddcar .main-cenrightbom .choose-spec,
+.listaddcar .main-cenrightbom .choose-mb {
+  margin-bottom: 12px;
+  color: #666666;
+}
+
+.listaddcar .main-cenrightbom .choose-spec .dt,
+.listaddcar .main-cenrightbom .choose-mb .dt {
+  float: left;
+  width: 75px;
+  margin-right: 0;
+  height: 36px;
+  clear: both;
+  font-size: 12px;
+  line-height: 30px;
+  color: #3a3a3a;
+}
+
+.listaddcar .main-cenrightbom .choose-spec .choose-item-wrap,
+.listaddcar .main-cenrightbom .choose-mb .choose-item-wrap {
+  float: left;
+  width: 515px;
+}
+
+.listaddcar .main-cenrightbom .choose-spec .choose-item-wrap .choose-item,
+.listaddcar .main-cenrightbom .choose-mb .choose-item-wrap .choose-item {
+  position: relative;
+  float: left;
+  width: 160px;
+  height: 43px;
+  overflow: hidden;
+  font-family: helvetica, sans-serif;
+  line-height: 43px;
+  color: #3a3a3a;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #cbcbcb;
+  outline: 1px solid #ffffff;
+  margin: 0 10px 5px 0;
+  padding: 0 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.listaddcar .main-cenrightbom .choose-spec .choose-item-wrap .choose-item img,
+.listaddcar .main-cenrightbom .choose-mb .choose-item-wrap .choose-item img {
+  width: auto;
+  height: 100%;
+}
+
+.listaddcar .main-cenrightbom .choose-spec .choose-item-wrap .choose-item:nth-last-of-type(1),
+.listaddcar .main-cenrightbom .choose-mb .choose-item-wrap .choose-item:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.listaddcar .main-cenrightbom .choose-spec .choose-item-wrap .choose-itemactive,
+.listaddcar .main-cenrightbom .choose-mb .choose-item-wrap .choose-itemactive {
+  border: 1px solid #ca151d;
+}
+
+.listaddcar .main-cenrightbom .choose-spec .listjiage,
+.listaddcar .main-cenrightbom .choose-mb .listjiage {
+  font-size: 20px;
+  color: #dd2434;
+  line-height: 30px;
+}
+
+.listaddcar .main-cenrightbom .choose-mb {
+  margin-bottom: 20px;
+}
+
+.listaddcar .main-cenrightbom .choose-mb .dd {
+  margin-left: 80px;
+  line-height: 30px;
+  color: #ca151d;
+  font-size: 12px;
+}
+
+.listaddcar .main-cenrightbom .choose-num span {
+  display: inline-block;
+  width: 30px;
+  height: 38px;
+  margin-right: 0;
+  line-height: 38px;
+  font-size: 14px;
+  text-align: center;
+  background: #f7f7f7;
+  color: #3a3a3a;
+  border: 1px solid #c6c6c6;
+  border-radius: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.listaddcar .main-cenrightbom .choose-num span:nth-of-type(1) {
+  border-right: 0;
+}
+
+.listaddcar .main-cenrightbom .choose-num span:nth-of-type(2) {
+  border-left: 0;
+}
+
+.listaddcar .main-cenrightbom .choose-num input {
+  width: 60px;
+  height: 38px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  border: 1px solid #c6c6c6;
+  outline: none;
+}
+
+.listaddcar .main-cenrightbom .btn-wrap {
+  margin: 20px 0 0 83px;
+  margin-left: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.listaddcar .main-cenrightbom .btn-wrap span {
+  display: inline-block;
+  width: 207px;
+  padding-left: 0;
+  text-align: center;
+  line-height: 53px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.listaddcar .main-cenrightbom .btn-wrap span:nth-of-type(1) {
+  background: #ffffff;
+  border: 1px solid #ca151d;
+  color: #ca151d;
+}
+
+.mask {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  background-color: #333333;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.shuax {
+  color: #008fd5;
+  cursor: pointer;
 }
